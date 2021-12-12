@@ -8,7 +8,7 @@ const Configuration = {
    * Resolve and load conventional-changelog-atom from node_modules.
    * Referenced packages must be installed
    */
-  parserPreset: 'conventional-changelog-atom',
+  // parserPreset: 'conventional-changelog-atom',
   /*
    * Resolve and load @commitlint/format from node_modules.
    * Referenced package must be installed
@@ -40,10 +40,10 @@ const Configuration = {
     messages: {},
     questions: {
       type: {
-        description: 'please input type:',
-      },
-    },
-  },
-};
+        description: 'please input type:'
+      }
+    }
+  }
+}
 
-module.exports = Configuration;
+module.exports = Configuration
