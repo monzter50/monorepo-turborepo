@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "react-scripts test",
     "lint": "eslint . --fix",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -59,8 +59,8 @@
     "@storybook/node-logger": "^6.4.8",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.8",
+    "@testing-library/react-hooks": "^7.0.2",
     "babel-core": "^6.26.3",
-    "babel-jest": "^27.4.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^8.4.1",
@@ -70,6 +70,7 @@
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.27.1",
     "husky": "^7.0.0",
-    "jest": "^27.4.4"
+    "jest": "^27.4.5",
+    "jest-watch-typeahead": "0.6.4"
   }
 }
