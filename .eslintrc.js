@@ -30,10 +30,17 @@ module.exports = {
     'testing-library/no-dom-import': 'off',
     indent: ['error', 2],
     'no-multi-spaces': ['error'],
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error',
+    'jest/expect-expect': [
+      'error',
+      {
+        assertFunctionNames: ['expect', 'expectSaga'],
+        additionalTestBlockFunctions: []
+      }
+    ]
   }
 }
