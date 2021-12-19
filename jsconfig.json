@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src"
+    },
+    "include": ["src"],
+    "moduleDirectories": [
+        "node_modules",
+        "src"
+    ]
+}

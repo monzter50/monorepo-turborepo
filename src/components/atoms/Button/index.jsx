@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './button.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './button.css'
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({ typeButton, backgroundColor, size, label, ...props }) => {
   const mode = {
-    'primary':'storybook-button--primary',
-    'secondary':'storybook-button--secondary',
-    'link':'storybook-button--link'
-  };
+    primary: 'storybook-button--primary',
+    secondary: 'storybook-button--secondary',
+    link: 'storybook-button--link'
+  }
   return (
     <button
       type="button"
@@ -20,14 +20,14 @@ export const Button = ({ typeButton, backgroundColor, size, label, ...props }) =
     >
       {label}
     </button>
-  );
-};
+  )
+}
 
 Button.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-  primary: PropTypes.oneOf(['primary', 'secondary', 'link']),
+  typeButton: PropTypes.oneOf(['primary', 'secondary', 'link']),
   /**
    * What background color to use
    */
@@ -43,12 +43,12 @@ Button.propTypes = {
   /**
    * Optional click handler
    */
-  onClick: PropTypes.func,
-};
+  onClick: PropTypes.func
+}
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: 'primary',
+  typeButton: 'primary',
   size: 'medium',
-  onClick: undefined,
-};
+  onClick: undefined
+}
