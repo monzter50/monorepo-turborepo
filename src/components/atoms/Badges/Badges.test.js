@@ -4,8 +4,8 @@ import { render, screen } from '@testing-library/react'
 import { Badges } from './index'
 
 test('render components', () => {
-  render(<Badges label="Button"/>)
-  const el = screen.getByText('Button')
+  render(<Badges label="Badges"/>)
+  const el = screen.getByText('Badges')
 
   expect(el).toBeDefined()
 })

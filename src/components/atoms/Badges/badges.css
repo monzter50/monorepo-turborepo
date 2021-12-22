@@ -2,7 +2,7 @@
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
     border: 0;
-    border-radius: 3em;
+    border-radius: .7em;
     cursor: pointer;
     display: inline-block;
     line-height: 1;
@@ -12,6 +12,7 @@
     color: white;
     background-color: #99A518;
   }
+
   .storybook-badges--dark {
     color: white;
     background-color: #4B3828;
@@ -48,7 +49,7 @@
     color: white;
     background-color: #C2BEB4;
   }
-  .storybook-badges--posion {
+  .storybook-badges--poison {
     color: white;
     background-color: #883C88;
   }

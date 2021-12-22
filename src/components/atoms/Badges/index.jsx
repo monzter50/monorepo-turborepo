@@ -6,15 +6,10 @@ import './badges.css'
  * Primary UI component for user interaction
  */
 export const Badges = ({ typeBadges, backgroundColor, size, label, ...props }) => {
-  const mode = {
-    electric: 'storybook-bandges--electric',
-    poison: 'storybook-bandges--poison',
-    ground: 'storybook-bandges--ground'
-  }
   return (
     <div
       role="badges"
-      className={['storybook-badges', `storybook-badges--${size}`, mode[typeBadges]].join(' ')}
+      className={['storybook-badges', `storybook-badges--${size}`, `storybook-badges--${typeBadges}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >

@@ -15,34 +15,35 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => <Badges {...args} />
 
-export const Primary = Template.bind({})
+export const Normal = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+Normal.args = {
   label: 'Badges'
 }
 
-export const Secondary = Template.bind({})
-Secondary.args = {
+export const Dark = Template.bind({})
+Dark.args = {
   typeBadges: 'dark',
   label: 'Badges'
 }
 
-export const Large = Template.bind({})
-Large.args = {
+export const Poison = Template.bind({})
+Poison.args = {
+  typeBadges: 'poison',
   size: 'large',
   label: 'Badges'
 }
 
-export const Small = Template.bind({})
-Small.args = {
+export const Electric = Template.bind({})
+Electric.args = {
   typeBadges: 'electric',
   size: 'small',
   label: 'Badges'
 }
 
-export const Link = Template.bind({})
-Link.args = {
-  typeBadges: 'poison',
+export const Ground = Template.bind({})
+Ground.args = {
+  typeBadges: 'ground',
   size: 'small',
   label: 'Badges'
 }
