@@ -27,7 +27,7 @@ Badges.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-  typeBadges: PropTypes.oneOf(['electric', 'posion', 'ground', 'normal']),
+  typeBadges: PropTypes.oneOf(['bug', 'dark', 'dragon', 'fairy', 'flying', 'ghost', 'grass', 'ice', 'psychic', 'rock', 'steel', 'water', 'fighting', 'fire', 'electric', 'posion', 'ground', 'normal', 'dark']),
   /**
    * What background color to use
    */

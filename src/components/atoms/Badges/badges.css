@@ -7,19 +7,80 @@
     display: inline-block;
     line-height: 1;
   }
-  .storybook-badges--poison {
+  
+  .storybook-badges--bug {
     color: white;
-    background-color: #1ea7fd;
+    background-color: #99A518;
+  }
+  .storybook-badges--dark {
+    color: white;
+    background-color: #4B3828;
+  }
+  .storybook-badges--dragon {
+    color: white;
+    background-color: #7762E3;
+  }
+  .storybook-badges--fairy {
+    color: white;
+    background-color: #F4B2F6;
   }
   .storybook-badges--electric {
-    color: #333;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    color: white;
+    background-color: #F2AC12;
+  }
+  .storybook-badges--flying {
+    color: white;
+    background-color: #8FA3F1;
+  }
+  .storybook-badges--ghost {
+    color: white;
+    background-color: #5E5EAF;
+  }
+  .storybook-badges--grass {
+    color: white;
+    background-color: #6DC033;
+  }
+  .storybook-badges--ice {
+    color: white;
+    background-color: #6CD3F4;
+  }
+  .storybook-badges--normal {
+    color: white;
+    background-color: #C2BEB4;
+  }
+  .storybook-badges--posion {
+    color: white;
+    background-color: #883C88;
+  }
+  .storybook-badges--psychic {
+    color: white;
+    background-color: #EB447C;
+  }
+  .storybook-badges--rock {
+    color: white;
+    background-color: #AFA05F;
+  }
+  .storybook-badges--steel {
+    color: white;
+    background-color: #6d6e76;
+  }
+  .storybook-badges--water {
+    color: white;
+    background-color: #3597F8;
+  }
+  .storybook-badges--fighting {
+    color: white;
+    background-color: #642915;
+  }
+  .storybook-badges--fire {
+    color: white;
+    background-color: #EA4513;
   }
   .storybook-badges--ground {
-    color: #1ea7fd;
-    background-color: transparent;
+    color: white;
+    background-color: #CFB055;
   }
+
   .storybook-badges--small {
     font-size: 12px;
     padding: 10px 16px;
@@ -32,4 +93,3 @@
     font-size: 16px;
     padding: 12px 24px;
   }
-  

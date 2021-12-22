@@ -23,7 +23,7 @@ Primary.args = {
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-  typeBadges: 'secondary',
+  typeBadges: 'dark',
   label: 'Badges'
 }
 
@@ -35,12 +35,14 @@ Large.args = {
 
 export const Small = Template.bind({})
 Small.args = {
+  typeBadges: 'electric',
   size: 'small',
   label: 'Badges'
 }
 
 export const Link = Template.bind({})
 Link.args = {
+  typeBadges: 'poison',
   size: 'small',
   label: 'Badges'
 }
