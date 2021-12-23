@@ -28,6 +28,8 @@ module.exports = {
     'testing-library/no-await-sync-query': 'error',
     // 'testing-library/no-debugging-utils': 'warn',
     'testing-library/no-dom-import': 'off',
+    'testing-library/no-node-access': 'off',
+    'testing-library/no-container': 'off',
     indent: ['error', 2],
     'no-multi-spaces': ['error'],
     'jest/no-disabled-tests': 'warn',
