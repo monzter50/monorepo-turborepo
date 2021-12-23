@@ -21,17 +21,15 @@ Card.args = {
   typeSkeleton: 'card'
 }
 
-// export const Secondary = Template.bind({})
-// Secondary.args = {
-//   typeButton: 'secondary',
-//   label: 'Button'
-// }
+export const avatar = Template.bind({})
+avatar.args = {
+  typeSkeleton: 'avatar'
+}
 
-// export const Large = Template.bind({})
-// Large.args = {
-//   size: 'large',
-//   label: 'Button'
-// }
+export const Text = Template.bind({})
+Text.args = {
+  typeSkeleton: 'text'
+}
 
 // export const Small = Template.bind({})
 // Small.args = {

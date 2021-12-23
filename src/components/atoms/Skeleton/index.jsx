@@ -8,7 +8,7 @@ import './skeleton.css'
 export const Skeleton = ({ typeSkeleton, backgroundColor, ...props }) => {
   return (
     <div
-      className={['storybook-skeleton', `storybook-skeleton--${typeSkeleton}`].join(' ')}
+      className={['storybook-skeleton', 'storybook-loader', `storybook-skeleton--${typeSkeleton}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     /
