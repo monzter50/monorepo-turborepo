@@ -1,0 +1,13 @@
+.storybook-skeleton {
+    background: red;
+    margin-top: 3px;
+    position: relative;
+    background: linear-gradient(to right, #f2f2f2, #ddd, #f2f2f2);
+    overflow: hidden;
+}
+
+.storybook-skeleton--card {
+    width:100%;
+    max-width:200px;
+    height:250px;
+}
