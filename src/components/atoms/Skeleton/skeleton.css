@@ -9,7 +9,9 @@
 .storybook-skeleton--card {
     width:100%;
     max-width:200px;
-    height:250px;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    border-radius:.5rem;
 }
 
 .storybook-skeleton--avatar {
