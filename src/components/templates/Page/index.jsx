@@ -1,3 +1,3 @@
-import { Page } from './Pages'
+import { Page } from './Page'
 
 export { Page }
