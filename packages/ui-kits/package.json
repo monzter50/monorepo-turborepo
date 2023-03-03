@@ -2,29 +2,27 @@
   "name": "@ui/ui-kits",
   "version": "1.0.0",
   "description": "",
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "TIMING=1 eslint \"**/*.ts*\"",
-    "typecheck": "tsc src/index.ts --noEmit"
+    "lint": "eslint \"src/**/*.ts*\"",
+    "typecheck": "tsc src/index.ts --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
+  
   "author": "",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "tsup": {
-    "entry": [
-      "src/index.ts"
-    ],
-    "dts": true,
-    "sourcemap": true,
-    "format": [
-      "esm",
-      "cjs"
-    ]
-  },
+ 
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
@@ -52,5 +50,8 @@
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }

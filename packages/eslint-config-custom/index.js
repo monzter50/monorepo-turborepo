@@ -8,18 +8,15 @@ module.exports = {
     'standard',
     'plugin:testing-library/react',
     'plugin:jest/recommended',
-    'standard-with-typescript',
-    'next'
+    'next',
+    'turbo'
   ],
-  plugins: ['react', 'testing-library', 'react-hooks', 'jest', 'turbo'],
-  parser: '@babel/eslint-parser',
-  //   parserOptions: {
-  //     ecmaFeatures: {
-  //       jsx: true,
-  //     },
-  //     ecmaVersion: 13,
-  //     sourceType: "module",
-  //   },
+  plugins: ['react', 'testing-library', 'react-hooks', 'jest'],
+  parserOptions: {
+    babelOptions: {
+      presets: [require.resolve('next/babel')]
+    }
+  },
   rules: {
     'react/react-in-jsx-scope': 'off',
     'testing-library/await-async-query': 'error',
@@ -34,7 +31,9 @@ module.exports = {
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
-    'jest/valid-expect': 'error'
+    'jest/valid-expect': 'error',
+    'space-before-function-paren': 'off',
+    'eol-last': 'off'
     // 'jest/expect-expect': [
     //   'error',
     //   {
